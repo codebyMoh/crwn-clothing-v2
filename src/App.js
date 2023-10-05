@@ -1,49 +1,40 @@
-import CategoaryItem from './components/category-item/category-item.component';
-
-import './catagories.styles.scss';
-
-
+import Directory from './components/directory/directory.component';
 
 const App = () => {
 
-  const catagories = [
+  const categories = [
     {
-      id : 1,
-      title : 'Hats',
-      imageUrl : 'https://i.ibb.co/cvpntL1/hats.png', 
+      id: 1,
+      title: 'Hats',
+      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
     },
     {
-      id : 2,
-      title : 'jackets',
-      imageUrl : 'https://i.ibb.co/cvpntL1/jackets.png',
+      id: 2,
+      title: 'jackets',
+      imageUrl: 'https://i.ibb.co/cvpntL1/jackets.png',
     },
     {
-      id : 3,
-      title : 'Sneakers',
-      imageUrl : 'https://i.ibb.co/cvpntL1/snekers.png',
+      id: 3,
+      title: 'Sneakers',
+      imageUrl: 'https://i.ibb.co/cvpntL1/snekers.png',
     },
     {
-      id : 4,
-      title : 'Womens',
-      imageUrl : 'https://i.ibb.co/cvpntL1/womens.png',
+      id: 4,
+      title: 'Womens',
+      imageUrl: 'https://i.ibb.co/cvpntL1/womens.png',
     },
     {
-      id : 5,
-      title : 'Mens',
-      imageUrl : 'https://i.ibb.co/cvpntL1/mens.png',
+      id: 5,
+      title: 'Mens',
+      imageUrl: 'https://i.ibb.co/cvpntL1/mens.png',
     },
   ];
 
 
-  return (
-    <div className="categories-container">
-      {catagories.map((category) => (
-        <CategoaryItem key={category.id} category={category}/> 
- 
-        ))}
+  return <Directory categories={categories} />
   
-    </div>
-  )
-}
 
-export default App;
+} 
+  
+  
+      export default App;
